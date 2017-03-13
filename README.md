@@ -1,0 +1,1 @@
+Example of a card game using flowtype, jest, redux and react

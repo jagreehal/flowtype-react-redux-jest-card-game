@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "next/babel",
+    "latest"    
+  ],
+  "plugins": [
+    "styled-jsx/babel",
+    "transform-flow-strip-types",
+    "transform-class-properties"
+  ],
+  "sourceMaps": "inline",
+  "retainLines": true
+}

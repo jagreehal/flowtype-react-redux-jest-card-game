@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [{
+            "type": "node2",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceRoot}/server.js",
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "AWS_ACCESS_KEY_ID": "AKIAIJHSAFIG3WHDEVFQ",
+                "AWS_SECRET_ACCESS_KEY": "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",
+                "S3_ENDPOINT": "https://s3-eu-west-1.amazonaws.com",
+                "QUEUE_NAME": "cup-ec-si-cup-usage-events",
+                "BASE_REGION": "eu-west-1",
+                "QUEUE_URL": "https://sqs.eu-west-1.amazonaws.com/942772678354/cup-ec-si-cup-usage-events",
+                "ERR_QUEUE_URL": "https://sqs.eu-west-1.amazonaws.com/942772678354/cup-ec-si-cup-usage-events-errors",
+                "ERR_QUEUE_NAME": "cup-ec-si-cup-usage-events-errors"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch via NPM",
+            "runtimeExecutable": "npm",
+            "windows": {
+                "runtimeExecutable": "npm.cmd"
+            },
+            "runtimeArgs": [
+                "run-script",
+                "dev"
+            ],
+            "port": 5858,
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach to Process",
+            "port": 5858
+        }
+    ]
+}
