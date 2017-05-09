@@ -4,6 +4,8 @@
     "javascript.validate.enable": false,
     "prettier.parser": "flow",
     "prettier.singleQuote": true,
-    "editor.formatOnSave": false,
-    "vsicons.presets.angular": false
+    "editor.formatOnSave": true,
+    "vsicons.presets.angular": false,
+    "flow.useNPMPackagedFlow": true,
+    "javascript.format.enable": false
 }
